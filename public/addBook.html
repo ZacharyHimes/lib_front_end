@@ -6,10 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Add Book Page</title>
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-
-
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+          integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 </head>
+
 <body>
 <header>
     <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-light">
@@ -30,10 +30,9 @@
     </nav>
 </header>
 <div class="container">
-    <h1 style="text-align: center">Add Books to Library Data base</h1>
+    <h1 style="text-align: center">Add Books to Library Data-base</h1>
     <div class="container">
-        <form method="POST"
-              action="https://shielded-springs-82180.herokuapp.com/api/books/">
+        <form method="POST" action="https://shielded-springs-82180.herokuapp.com/api/books/">
             <div class="form-group">
                 <label for="Name">Title of book:</label>
                 <input type="text" name="Name" id="Name" class="form-control"
@@ -63,8 +62,6 @@
     </div>
     <button class="btn btn-lg btn-outline-primary" id="btnAddBook" >Add Book</button>
     <div style="background: slategray; color: honeydew" class="jumbotron" id="output">
-
-
     </div>
 </div>
 <script>
@@ -77,16 +74,13 @@
                         document.getElementById("ISBN").value + " has been added to the data base.";
             }
         };
-        // foo=bar&lorem=ipsum
         let bookData = "Name=" + document.getElementById("Name").value + "&" +
             "Author=" + document.getElementById("Author").value  + "&" +
             "ISBN="  + document.getElementById("ISBN").value  + "&" +
             "Price="  + document.getElementById("Price").value;
         xhttp.open('POST', url, true);
-        // Just needed to place this line AFTER opening the object
         xhttp.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
         xhttp.send(bookData);
-
     });
 </script>
 </body>

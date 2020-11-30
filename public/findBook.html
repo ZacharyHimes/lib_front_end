@@ -44,12 +44,9 @@
             <div class="form-group">
                 <label for="ISBN">ISBN:</label>
                 <input type="text" id="ISBN" class="form-control" placeholder="ISBN">
-
             </div>
-
     </div>
     <button type="button" class="btn btn-primary btn-sm" id="loadISBN" value="find by ISBN" onclick="findData()">Find by ISBN</button>
-
     <div style="background: slategray; color: honeydew" class="jumbotron" id="output">
 
     </div>
@@ -62,7 +59,7 @@
         let isbn = document.getElementById('ISBN').value;
         xhttp.onreadystatechange = function () {
             if (this.readyState == 4 && this.status == 200) {
-                document.getElementById("output").innerHTML = CreateTable1(JSON.parse(this.responseText));
+                document.getElementById("output").innerHTML = CreateTableAuthor(JSON.parse(this.responseText));
             }
         };
         xhttp.open('GET', url + isbn, true);
@@ -74,14 +71,14 @@
         let author = document.getElementById('Author').value;
         xhttp.onreadystatechange = function () {
             if (this.readyState == 4 && this.status == 200) {
-                document.getElementById("output").innerHTML = CreateTable2(JSON.parse(this.responseText));
+                document.getElementById("output").innerHTML = CreateTableISBN(JSON.parse(this.responseText));
             }
         };
         xhttp.open('GET', url + author, true);
         xhttp.send();
     }
 
-    function CreateTable1(data) {
+    function CreateTableAuthor(data) {
         let table = "";
         table =
             '<table class="table table-bordered table-hover table-light"> \n' +
@@ -110,7 +107,7 @@
             return table;
         }
     }
-    function CreateTable2(data) {
+    function CreateTableISBN(data) {
         let table = "";
         table =
             '<table class="table table-bordered table-hover table-light"> \n' +

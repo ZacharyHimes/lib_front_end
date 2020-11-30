@@ -33,21 +33,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cced5d12-2718-4df3-9edb-29f7e0c9d37a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/public/stylesheets/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/lib_front_end.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/www" beforeDir="false" afterPath="$PROJECT_DIR$/bin/www" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/addBook.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/addBook.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/findBook.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/findBook.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/removeBook.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/removeBook.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/showBook.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/showBook.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/stylesheets/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/stylesheets/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/updateBook.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/updateBook.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -92,13 +81,6 @@
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="restartRequiresConfirmation" value="false" />
   </component>
-  <component name="RunManager">
-    <configuration default="true" type="GradleAppRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true">
-      <method v="2">
-        <option name="com.jetbrains.cidr.cpp.gradle.execution.GradleNativeBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -107,7 +89,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1606697760533</updated>
-      <workItem from="1606697761571" duration="17845000" />
+      <workItem from="1606697761571" duration="18700000" />
+      <workItem from="1606718539192" duration="170000" />
     </task>
     <servers />
   </component>
@@ -124,31 +107,36 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state width="1878" height="150" key="GridCell.Tab.0.bottom" timestamp="1606716298249">
-      <screen x="0" y="0" width="1920" height="1080" />
+    <state width="898" height="150" key="GridCell.Tab.0.bottom" timestamp="1606718502516">
+      <screen x="0" y="25" width="1920" height="983" />
     </state>
     <state width="1878" height="150" key="GridCell.Tab.0.bottom/0.0.1920.1080/-1680.0.1680.1050@0.0.1920.1080" timestamp="1606716298249" />
     <state width="1878" height="156" key="GridCell.Tab.0.bottom/0.0.1920.1080/-1680.25.1680.1025@0.0.1920.1080" timestamp="1606709101327" />
     <state width="1878" height="156" key="GridCell.Tab.0.bottom/0.0.1920.997/-1680.25.1680.1025@0.0.1920.997" timestamp="1606704371882" />
-    <state width="1878" height="150" key="GridCell.Tab.0.center" timestamp="1606716298248">
-      <screen x="0" y="0" width="1920" height="1080" />
+    <state width="898" height="150" key="GridCell.Tab.0.bottom/0.25.1920.983/-1680.25.1680.1025@0.25.1920.983" timestamp="1606718502516" />
+    <state width="898" height="150" key="GridCell.Tab.0.center" timestamp="1606718502516">
+      <screen x="0" y="25" width="1920" height="983" />
     </state>
     <state width="1878" height="150" key="GridCell.Tab.0.center/0.0.1920.1080/-1680.0.1680.1050@0.0.1920.1080" timestamp="1606716298248" />
     <state width="1878" height="156" key="GridCell.Tab.0.center/0.0.1920.1080/-1680.25.1680.1025@0.0.1920.1080" timestamp="1606709101324" />
     <state width="1878" height="156" key="GridCell.Tab.0.center/0.0.1920.997/-1680.25.1680.1025@0.0.1920.997" timestamp="1606704371881" />
-    <state width="1878" height="150" key="GridCell.Tab.0.left" timestamp="1606716298246">
-      <screen x="0" y="0" width="1920" height="1080" />
+    <state width="898" height="150" key="GridCell.Tab.0.center/0.25.1920.983/-1680.25.1680.1025@0.25.1920.983" timestamp="1606718502516" />
+    <state width="898" height="150" key="GridCell.Tab.0.left" timestamp="1606718502515">
+      <screen x="0" y="25" width="1920" height="983" />
     </state>
     <state width="1878" height="150" key="GridCell.Tab.0.left/0.0.1920.1080/-1680.0.1680.1050@0.0.1920.1080" timestamp="1606716298246" />
     <state width="1878" height="156" key="GridCell.Tab.0.left/0.0.1920.1080/-1680.25.1680.1025@0.0.1920.1080" timestamp="1606709101321" />
     <state width="1878" height="156" key="GridCell.Tab.0.left/0.0.1920.997/-1680.25.1680.1025@0.0.1920.997" timestamp="1606704371879" />
-    <state width="1878" height="150" key="GridCell.Tab.0.right" timestamp="1606716298248">
-      <screen x="0" y="0" width="1920" height="1080" />
+    <state width="898" height="150" key="GridCell.Tab.0.left/0.25.1920.983/-1680.25.1680.1025@0.25.1920.983" timestamp="1606718502515" />
+    <state width="898" height="150" key="GridCell.Tab.0.right" timestamp="1606718502516">
+      <screen x="0" y="25" width="1920" height="983" />
     </state>
     <state width="1878" height="150" key="GridCell.Tab.0.right/0.0.1920.1080/-1680.0.1680.1050@0.0.1920.1080" timestamp="1606716298248" />
     <state width="1878" height="156" key="GridCell.Tab.0.right/0.0.1920.1080/-1680.25.1680.1025@0.0.1920.1080" timestamp="1606709101325" />
     <state width="1878" height="156" key="GridCell.Tab.0.right/0.0.1920.997/-1680.25.1680.1025@0.0.1920.997" timestamp="1606704371881" />
+    <state width="898" height="150" key="GridCell.Tab.0.right/0.25.1920.983/-1680.25.1680.1025@0.25.1920.983" timestamp="1606718502516" />
   </component>
 </project>
