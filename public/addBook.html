@@ -13,7 +13,7 @@
 <body>
 <header>
     <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="#">Books</a>
+        <a class="navbar-brand" href="">Books</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -27,18 +27,13 @@
                 <a class="nav-item nav-link" href="updateBook.html">Update Books</a>
             </div>
         </div>
-        <form class="form-inline">
-            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-        </form>
     </nav>
 </header>
 <div class="container">
-    <h1 style="text-align: center">Add your favorite books</h1>
+    <h1 style="text-align: center">Add Books to Library Data base</h1>
     <div class="container">
         <form method="POST"
-              action="https://bosena-book-store-backend-api.herokuapp.com/api/books">
-            <h2 style="text-align: center">Please provide your friend information</h2>
+              action="https://shielded-springs-82180.herokuapp.com/api/books/">
             <div class="form-group">
                 <label for="Name">Title of book:</label>
                 <input type="text" name="Name" id="Name" class="form-control"
@@ -61,25 +56,25 @@
             </div>
             <div class="form-group">
                 <div class="container">
-                    <button class="btn btn-lg btn-outline-primary" id="btnAddBook" >Add Book</button>
                 </div>
             </div>
         </form>
 
     </div>
+    <button class="btn btn-lg btn-outline-primary" id="btnAddBook" >Add Book</button>
+    <div style="background: slategray; color: honeydew" class="jumbotron" id="output">
 
-    <div class="jumbotron" id="output">
 
     </div>
 </div>
 <script>
     document.getElementById("btnAddBook").addEventListener("click", (event) =>{
-        let url = "https://bosena-book-store-backend-api.herokuapp.com/api/books"
+        let url = "https://shielded-springs-82180.herokuapp.com/api/books/"
         let xhttp = new XMLHttpRequest();
         xhttp.onreadystatechange = function (){
             if (this.readyState == 4 && this.status == 200){
-                document.getElementById("output").innerHTML =
-                    "<pre>" + this.responseText + "</pre>";
+                    document.getElementById("output").innerHTML = "The book " + document.getElementById("Name").value + " With the ISBN: "+
+                        document.getElementById("ISBN").value + " has been added to the data base.";
             }
         };
         // foo=bar&lorem=ipsum

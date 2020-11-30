@@ -7,35 +7,33 @@
     <title>Show Books Page</title>
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-
+<link rel="stylesheet" href="stylesheets/style.css">
 
 </head>
 <body>
 
 <header>
     <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="#">Books</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"  aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <a class="navbar-brand" href="">Books</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div class="navbar-nav">
                 <a class="nav-item nav-link active" href="index.html">Home <span class="sr-only">(current)</span></a>
-                <a class="nav-item nav-link" href="addBook.html" >Add Books</a>
-                <a class="nav-item nav-link" href="showBook.html"  >Show Books</a>
+                <a class="nav-item nav-link" href="addBook.html">Add Books</a>
+                <a class="nav-item nav-link" href="showBook.html">Show Books</a>
                 <a class="nav-item nav-link" href="findBook.html">Find Books</a>
                 <a class="nav-item nav-link" href="removeBook.html">Remove Books</a>
                 <a class="nav-item nav-link" href="updateBook.html">Update Books</a>
             </div>
         </div>
-        <form class="form-inline">
-            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-        </form>
     </nav>
 </header>
-<button class="btn-primary btn-lg" id="btnLoadFriends">Load Books</button>
-<div class="jumbotron" id="output">
+<center>
+<button class="btn-primary btn-lg" id="btnloadBooks">Load Books</button>
+</center>
+<div style="background: slategray; color: honeydew" class="jumbotron" id="output">
 
 </div>
 <script>
@@ -70,8 +68,8 @@
             '</table>\n'
         return table;
     }
-    document.getElementById("btnLoadFriends").addEventListener("click", (event) =>{
-        let url = " https://bosena-book-store-backend-api.herokuapp.com/api/books"
+    document.getElementById("btnloadBooks").addEventListener("click", (event) =>{
+        let url = "https://shielded-springs-82180.herokuapp.com/api/books/"
         let xhttp = new XMLHttpRequest();
         xhttp.onreadystatechange = function (){
             if (this.readyState == 4 && this.status == 200){
